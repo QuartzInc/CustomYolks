@@ -9,12 +9,12 @@ export INTERNAL_IP
 python --version
 
 # Check if playwright module is installed
-if python -c "import importlib.util; exit(0 if importlib.util.find_spec('playwright') else 1)"; then
-    echo "Playwright module detected. Installing browsers..."
-    python -m playwright install install-deps
-else
-    echo "Playwright module not found. Skipping browser installation."
-fi
+# if python -c "import importlib.util; exit(0 if importlib.util.find_spec('playwright') else 1)"; then
+#     echo "Playwright module detected. Installing browsers..."
+#     python -m playwright install
+# else
+#     echo "Playwright module not found. Skipping browser installation."
+# fi
 
 # Replace Startup Variables
 MODIFIED_STARTUP=$(echo -e $(echo -e ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g'))
