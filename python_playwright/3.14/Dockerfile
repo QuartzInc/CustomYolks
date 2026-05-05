@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	tini \
 	&& rm -rf /var/lib/apt/lists/*
 
+RUN pip install playwright==@1.59.0 && \
+	playwright install --with-deps
 
 ENV         USER=container
 ENV         HOME=/home/container
