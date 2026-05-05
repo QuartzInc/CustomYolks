@@ -39,4 +39,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/quartzinc/CustomYolks:python_playwright_${{ matrix.tag }}
+            ghcr.io/quartzinc/customyolks:python_playwright_${{ matrix.tag }}
