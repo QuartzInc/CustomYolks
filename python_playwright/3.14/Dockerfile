@@ -15,39 +15,34 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	tini \
 	libxcomposite1 \
 	libxdamage1 \
-	libgtk-3-0t64 \
-	libatk1.0-0t64 \
-	libgstreamer-1.0.so.0 \                         
-	libgtk-4.so.1          \                          
-	libgraphene-1.0.so.0    \                         
-	libicudata.so.76         \                        
-	libicui18n.so.76          \                       
-	libicuuc.so.76             \                      
-	libxslt.so.1                \                     
-	libevent-2.1.so.7            \                    
-	libgcrypt.so.20               \                   
-	libgpg-error.so.0              \                  
-	libgstallocators-1.0.so.0       \                 
-	libgstapp-1.0.so.0               \                
-	libgstbase-1.0.so.0               \               
-	libgstpbutils-1.0.so.0             \              
-	libgstaudio-1.0.so.0                \             
-	libgsttag-1.0.so.0                   \            
-	libgstvideo-1.0.so.0                  \           
-	libgstgl-1.0.so.0                      \          
-	libgstcodecparsers-1.0.so.0             \         
-	libgstfft-1.0.so.0                       \        
-	libwebpdemux.so.2                         \       
-	libavif.so.16                              \      
-	libharfbuzz-icu.so.0                        \     
-	libmanette-0.2.so.0                          \    
-	libenchant-2.so.2                             \   
-	libhyphen.so.0                                 \  
-	libsecret-1.so.0                                \ 
-	libwoff2dec.so.1.0.2                             \
-	libGLESv2.so.2 \
+	libgtk-3-0 \
+	libgtk-4-1 \
+	libatk1.0-0 \
+	libgstreamer-1.0-0 \
+	libgraphene-1.0-0 \
+	libicu76 \
+	libxslt1.1 \
+	libevent-2.1-7 \
+	libgcrypt20 \
+	libgpg-error0 \
+	libgstallocators-1.0-0 \
+	libgstapp-1.0-0 \
+	libgstbase-1.0-0 \
+	libgstpbutils-1.0-0 \
+	libgstaudio-1.0-0 \
+	libgsttag-1.0-0 \
+	libgstvideo-1.0-0 \
+	libgstgl-1.0-0 \
+	libgstcodecparsers-1.0-0 \
+	libgstfft-1.0-0 \
+	libwebpdemux2 \
+	libavif16 \
+	libharfbuzz-icu0 \
+	libenchant-2-2 \
+	libhyphen0 \
+	libsecret-1-0 \
+	libgles2-mesa \
 	&& rm -rf /var/lib/apt/lists/*
-
 
 ENV         USER=container
 ENV         HOME=/home/container
