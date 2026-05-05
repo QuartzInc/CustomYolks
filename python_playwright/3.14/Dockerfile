@@ -13,6 +13,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	iproute2 \
 	procps \
 	tini \
+	libxcomposite1 \
+	libxdamage1 \
+	libgtk-3-0t64 \
+	libatk1.0-0t64 \
 	&& rm -rf /var/lib/apt/lists/*
 
 

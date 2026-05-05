@@ -11,7 +11,7 @@ python --version
 # Check if playwright module is installed
 if python -c "import importlib.util; exit(0 if importlib.util.find_spec('playwright') else 1)"; then
     echo "Playwright module detected. Installing browsers..."
-    python -m playwright install --with-deps
+    python -m playwright install
 else
     echo "Playwright module not found. Skipping browser installation."
 fi
