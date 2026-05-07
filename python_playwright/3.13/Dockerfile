@@ -6,6 +6,10 @@ RUN         apt update \
     && apt -y install git gcc g++ ca-certificates dnsutils curl iproute2 ffmpeg procps tini \
     && useradd -m -d /home/container container
 
+RUN pip install --upgrade pip setuptools wheel && \
+    pip install playwright==1.59.0 && \
+    playwright install --with-deps
+
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
